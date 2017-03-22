@@ -1,11 +1,11 @@
-var v_subdomain = "z3n9777";
+var subdomain = "subdomain";
 var v_users_amount = 99;
 
 
 function getUsers(page) {
 
     $.ajax({
-        url: "https://"+v_subdomain+".zendesk.com/api/v2/users.json?include=identities&page=" + page,
+        url: "https://"+subdomain+".zendesk.com/api/v2/users.json?include=identities&page=" + page,
         type: "GET",
         dataType: "JSON"
     }).done(function(results) {
